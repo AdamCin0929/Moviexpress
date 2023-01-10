@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-image: url(./img/newspaper.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: -10000;
+}
+
+.navbar {
+    background-color: rgb(25, 3, 57);
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 3;
+}
+
+#jquery-script-menu p {
+    font-weight: bolder;
+}
+
+.fixed-nav nav {
+    position: fixed;
+}
+
+.secondtitle img {
+    position: relative;
+    top: -10px;
+    transform: scale(8, 8);
+}
+
+.navbar>a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 23px;
+    position: relative;
+    top: -10px;
+    transition: all 0.3s ease-out;
+}
+
+.navbar>a:hover {
+    color: rgb(216, 185, 112);
+}
+
+.searchbar {
+    float: right;
+    padding-right: 200px;
+    position: relative;
+    top: -10px;
+}
+
+.navbar input {
+    height: 30px;
+    width: 200px;
+}
+
+.navbar .rightbutton {
+    float: right;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-color: white;
+    cursor: pointer;
+
+}
+
+.navbar img {
+    position: relative;
+    display: block;
+    height: 25px;
+    width: 25px;
+    right: 5px;
+}
+
+.newstitle {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    padding-left: 430px;
+    top: 70px;
+    width: 80%;
+    font-weight: bolder;
+}
+
+.cameraimg {
+    position: absolute;
+    right: 180px;
+    top: 130px;
+}
+
+.dateline {
+    font-size: 18px;
+    position: relative;
+    left: 430px;
+    top: 60px;
+    width: 68%;
+    font-weight: bold;
+    border-bottom: 5px solid black;
+}
+
+
+.iconlink {
+    margin-right: 10px;
+}
+
+.iconlink a {
+    display: block;
+    float: left;
+    transform: scale(1.5, 1.5);
+    padding: 0 10px;
+    transition: all 0.3s ease-out;
+}
+
+.iconlink a:hover {
+    transform: scale(1.7, 1.7);
+}
+
+.nysm {
+    position: relative;
+    transform: scale(0.5, 0.5);
+    margin-top: -180px;
+    margin-bottom: -250px;
+}
+
+.tape1 {
+    z-index: 1;
+    position: absolute;
+    right: 420px;
+    top: 290px;
+}
+
+.tape2 {
+    z-index: 1;
+    position: absolute;
+    left: 420px;
+    top: 740px;
+}
+
+.foot {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    bottom: 0;
+    height: 80px;
+    background-color: rgb(25, 3, 57);
+}
+
+.foot img {
+    position: relative;
+    width: 15%;
+}
+
+.foot .footimg {
+    text-align: center;
+}
+
+.foottext {
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    position: relative;
+    bottom: 25px;
+}
+
+#rong {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+p{
+    position: relative;
+}
+   
+
+#liuyan {
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(216, 185, 112);
+    height: 350px;
+    bottom: 20px;
+}
+
+h5 {
+    margin-top: 0px;
+}
+
+#name {
+    width: 100px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#btn {
+    font-size: 20px;
+    width: 55px;
+    height: 35px;
+    background-color: rgb(25, 3, 57);
+    color: white;
+}
+
+#neirong {
+    font-size: 20px;
+    width: 735px;
+    border-radius: 5px;
+}
+
+span {
+    position: absolute;
+    right: 100px;
+}
+
+.times {
+    position: absolute;
+    right: 0;
+}
+
+.yellow {
+    background-color: transparent;
+}
+
+.yc {
+    display: none;
+}
+
+.delete{
+    border-radius: 5px;
+    color: rgb(25, 3, 57);
+}
+
+.delete:hover{
+    cursor: pointer;
+    color: rgb(25, 3, 57);
+}

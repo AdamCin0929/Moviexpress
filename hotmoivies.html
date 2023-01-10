@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moviexpress</title>
+    <link rel="stylesheet" href="./hotmovie.css">
+    <!-- jQuery -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Youtube-Video-In-Modal-jQuery-GRT-Youtube-Popup/grt-youtube-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" href="./img/icon.png" type="image/png" sizes="16x16">
+
+</head>
+
+<body id="jquery-script-menu">
+    <nav class="navbar" id="mainnav">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="secondtitle"><img src="./img/secondtitle.png" alt=""></div>
+        <div></div>
+        <a href="moviexpress.html">首頁</a>
+        <a href="moviexpress.html#newest">最新情報</a>
+        <a href="hotmoivies.html">熱門電影</a>
+        <a href="moviexpress.html#selected">編輯精選</a>
+
+        <div class="iconlink">
+            <a target="_blank"
+                href="https://www.facebook.com/profile.php?viewas=100000686899395&id=100086622909918"><img
+                    src="./img/facebook.png" alt=""></a>
+            <a target="_blank" href="https://www.instagram.com/"><img src="./img/instagram.png" alt=""></a>
+            <a target="_blank" href="https://twitter.com/?lang=zh-Hant"><img src="./img/twitter.png" alt=""></a>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </nav>
+
+    <div class="newstitle">
+        <h1>熱門電影</h1><img style="position:absolute; top:105px; left:330px" src="./img/popcorn.png" alt="popcorn">
+    </div>
+
+    <div class="container" id="featureContainer" style="width: 2000px; left: -200px; top: -10px; position: relative;">
+        <div class="row mx-auto my-auto justify-content-center">
+            <div id="featureCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="float-end pe-md-1">
+                    <a class="indicator" href="#featureCarousel" role="button" data-bs-slide="prev">
+                        <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                    </a> &nbsp;&nbsp;
+                    <a class="w-aut indicator" href="#featureCarousel" role="button" data-bs-slide="next">
+                        <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="./img/crawdads1.png" class="img-fluid">
+                                </div>
+                                <br>
+                                <div class="trailertexttitle">沼澤謀殺案</div>
+                                <div class="review">
+                                    <a href="https://www.imdb.com/title/tt9411972/?ref_=nv_sr_srsg_3"
+                                        target="_blank"><img class="IMDB" src="./img/IMDB.png" alt="IMDB"></a>
+                                    <a href="https://www.imdb.com/title/tt9411972/?ref_=nv_sr_srsg_3" target="_blank">
+                                        <p class="IMDBp">7.1</p>
+                                    </a>
+
+                                    <a href="https://www.rottentomatoes.com/m/where_the_crawdads_sing"
+                                        target="_blank"><img style="bottom: 12px;" class="tomato "
+                                            src="./img/rottentomatoesgreen.png" alt="tomato"></a>
+                                    <a href="https://www.rottentomatoes.com/m/where_the_crawdads_sing" target="_blank">
+                                        <p class="tomatop">34%</p>
+                                    </a>
+                                    <br><br>
+                                    <div class="card-img-overlays">&nbsp上映日期:&nbsp2022-10-07</div>
+                                    <br>
+                                    <span class="trailertext">&nbsp預告片<img src="./img/播放.png" class="youtube-link"
+                                            youtubeid="PY3808Iq0Tg"></img></span>
+                                    <button class="open-button" onclick="openForm()">點評</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="./img/smile1.png" class="img-fluid">
+                                </div>
+                                <br>
+                                <div class="trailertexttitle">微笑</div>
+                                <div class="review">
+                                    <a href="https://www.imdb.com/title/tt15474916/?ref_=nv_sr_srsg_4"
+                                        target="_blank"><img class="IMDB" src="./img/IMDB.png" alt="IMDB"></a>
+                                    <a href="https://www.imdb.com/title/tt15474916/?ref_=nv_sr_srsg_4" target="_blank">
+                                        <p class="IMDBp">7.0</p>
+                                    </a>
+
+                                    <a href="https://www.rottentomatoes.com/m/smile_2022" target="_blank"><img
+                                            class="tomato" src="./img/rottentomatoesred.png" alt="tomato"></a>
+                                    <a href="https://www.imdb.com/title/tt15474916/?ref_=nv_sr_srsg_4" target="_blank">
+                                        <p class="tomatop">77%</p>
+                                    </a>
+
+                                    <br><br>
+                                    <div class="card-img-overlays">&nbsp上映日期:&nbsp2022-09-30</div>
+                                    <br>
+                                    <span class="trailertext">&nbsp預告片<img src="./img/播放.png" class="youtube-link"
+                                            youtubeid="BcDK7lkzzsU"></img></span>
+                                    <button class="open-button" onclick="openForm()">點評</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="./img/阿姆斯特丹.png" class="img-fluid">
+                                </div>
+                                <br>
+                                <div class="trailertexttitle">阿姆斯特丹</div>
+                                <div class="review">
+                                    <a href="https://www.imdb.com/title/tt10304142/?ref_=fn_al_tt_0"
+                                        target="_blank"><img class="IMDB" src="./img/IMDB.png" alt="IMDB"></a>
+                                    <a href="https://www.imdb.com/title/tt10304142/?ref_=fn_al_tt_0" target="_blank">
+                                        <p class="IMDBp">6.2</p>
+                                    </a>
+
+                                    <a href="https://www.rottentomatoes.com/m/amsterdam_2022" target="_blank"><img
+                                            style="bottom: 12px;" class="tomato" src="./img/rottentomatoesgreen.png"
+                                            alt="tomato"></a>
+                                    <a href="https://www.rottentomatoes.com/m/amsterdam_2022" target="_blank">
+                                        <p class="tomatop">33%</p>
+                                    </a>
+
+                                    <br><br>
+                                    <div class="card-img-overlays">&nbsp上映日期:&nbsp2022-10-07</div>
+                                    <br>
+                                    <span class="trailertext">&nbsp預告片<img src="./img/播放.png" class="youtube-link"
+                                            youtubeid="GLs2xxM0e78"></img></span>
+                                    <button class="open-button" onclick="openForm()">點評</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="./img/645.png" class="img-fluid">
+                                </div>
+                                <br>
+                                <div class="trailertexttitle">樂透大作戰</div>
+                                <div class="review">
+                                    <a href="https://www.imdb.com/title/tt21800888/?ref_=nv_sr_srsg_0"
+                                        target="_blank"><img class="IMDB" src="./img/IMDB.png" alt="IMDB"></a>
+                                    <a href="https://www.imdb.com/title/tt21800888/?ref_=nv_sr_srsg_0" target="_blank">
+                                        <p class="IMDBp">7.2</p>
+                                    </a>
+
+                                    <br><br>
+                                    <div class="card-img-overlays">&nbsp上映日期:&nbsp2022-09-30</div>
+                                    <br>
+                                    <span class="trailertext">&nbsp預告片<img src="./img/播放.png" class="youtube-link"
+                                            youtubeid="qnvCsu7cHA4"></img></span>
+                                    <button class="open-button" onclick="openForm()">點評</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="./img/worry.png" class="img-fluid">
+                                </div>
+                                <br>
+                                <div class="trailertexttitle">別擔心親愛的</div>
+                                <div class="review">
+                                    <a href="https://www.imdb.com/title/tt10731256/?ref_=fn_al_tt_0"
+                                        target="_blank"><img class="IMDB" src="./img/IMDB.png" alt="IMDB"></a>
+                                    <a href="https://www.imdb.com/title/tt10731256/?ref_=fn_al_tt_0" target="_blank">
+                                        <p class="IMDBp">6.3</p>
+                                    </a>
+
+                                    <a href="https://www.rottentomatoes.com/m/dont_worry_darling" target="_blank"><img
+                                            style="bottom: 12px;" class="tomato" src="./img/rottentomatoesgreen.png"
+                                            alt="tomato"></a>
+                                    <a href="https://www.rottentomatoes.com/m/dont_worry_darling" target="_blank">
+                                        <p class="tomatop">38%</p>
+                                    </a>
+
+                                    <br><br>
+                                    <div class="card-img-overlays">&nbsp上映日期:&nbsp2022-09-22</div>
+                                    <br>
+                                    <span class="trailertext">&nbsp預告片<img src="./img/播放.png" class="youtube-link"
+                                            youtubeid="FgmnKsED-jU"></img></span>
+                                    <button class="open-button" onclick="openForm()">點評</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="./img/fall.png" class="img-fluid">
+                                </div>
+                                <br>
+                                <div class="trailertexttitle">墜</div>
+                                <div class="review">
+                                    <a href="https://www.imdb.com/title/tt15325794/?ref_=nv_sr_srsg_6"
+                                        target="_blank"><img class="IMDB" src="./img/IMDB.png" alt="IMDB"></a>
+                                    <a href="https://www.imdb.com/title/tt15325794/?ref_=nv_sr_srsg_6" target="_blank">
+                                        <p class="IMDBp">6.4</p>
+                                    </a>
+
+                                    <a href="https://www.rottentomatoes.com/m/fall" target="_blank"><img class="tomato"
+                                            src="./img/rottentomatoesred.png" alt="tomato"></a>
+                                    <a href="https://www.rottentomatoes.com/m/fall" target="_blank">
+                                        <p class="tomatop">78%</p>
+                                    </a>
+
+                                    <br><br>
+                                    <div class="card-img-overlays">&nbsp上映日期:&nbsp2022-09-16</div>
+                                    <br>
+                                    <span class="trailertext">&nbsp預告片<img src="./img/播放.png" class="youtube-link"
+                                            youtubeid="aa5MXOMN1lM"></img></span>
+                                    <button class="open-button" onclick="openForm()">點評</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="boxofficetitle">
+        <h1>票房榜</h1>
+        <img style="position:absolute; bottom:5px ; left: 130px;" src="./img/ticket.png" alt="">
+    </div>
+
+    <div class="boxoffice">
+        <button class="tablinks active" onclick="openMovie(event, 'Taiwan')">Taiwan</button>
+        <button class="tablinks" onclick="openMovie(event, 'Global')">Global</button>
+    </div>
+
+    <div id="Global" class="tabcontent" style="display:block;padding-top: 20px;">
+        <div style="display:flex ;">
+            <img style="position:relative ;border-radius:3px; height:150px; " src="./img/smile.png" alt="smile">
+            <div style="position:relative; left: 10px;">
+                <p style="font-size: 22px; color:rgb(216, 185, 112); font-weight:bold">微笑</p>
+                <p style="font-size: 18px; padding: 0px 10px 0px 0px;">在目睹一名病人詭異的創傷經驗之後，蘿絲卡特醫師（蘇西貝肯 飾）開始經歷...</p>
+            </div>
+        </div>
+        <hr>
+        <p></p>
+        <p>&nbsp1.&nbsp&nbsp微笑</p>
+        <p>&nbsp2.&nbsp&nbsp鱷魚歌王</p>
+        <p>&nbsp3.&nbsp&nbsp阿姆斯特丹</p>
+        <p>&nbsp4.&nbsp&nbsp女王</p>
+        <p>&nbsp5.&nbsp&nbsp別擔心親愛的</p>
+    </div>
+
+    <!-- Tab content -->
+    <div id="Taiwan" class="tabcontent" style="display:block;padding-top: 20px;">
+        <div style="display:flex ;">
+            <img style="position:relative ;border-radius:3px; height:150px; " src="./img/happy.png" alt="smile">
+            <div style="position:relative; left: 10px;">
+                <p style="font-size: 22px; color:rgb(216, 185, 112); font-weight:bold">幸福入場券</p>
+                <p style="font-size: 18px; padding: 0px 10px 0px 0px;">
+                    喬治克隆尼及茱莉亞羅勃茲在大銀幕上再度合體，飾演一對早已離婚的夫妻被迫...</p>
+            </div>
+        </div>
+        <hr>
+        <p>&nbsp1.&nbsp&nbsp幸福入場券</p>
+        <p>&nbsp2.&nbsp&nbsp樂透大作戰</p>
+        <p>&nbsp3.&nbsp&nbsp行動代號：狼狩獵</p>
+        <p>&nbsp4.&nbsp&nbsp阿凡達（重映版）</p>
+        <p>&nbsp5.&nbsp&nbsp破案天才伽利略：沉默的遊行</p>
+    </div>
+
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+
+            <p>意見表</p>
+            <label for="nickname"><b>姓名:</b></label>
+            <input type="text" placeholder="請填入您的姓名(必填)" name="nickname" required>
+
+            <label for="sextype"><b>&nbsp&nbsp性別:</b></label>
+            <input type="radio" name="sextype"><span class="radiob">男</span>
+            <input type="radio" name="sextype"><span class="radiob">女</span>
+
+            <label for="age"><b>&nbsp&nbsp年齡:</b></label>
+            <select name="age" id="age" style="font-size:18px;">
+                <option>您的年齡:</option>
+                <option>18歲以下</option>
+                <option>19~24歲</option>
+                <option>25~30歲</option>
+                <option>31~36歲</option>
+                <option>37~42歲</option>
+                <option>43~48歲</option>
+                <option>49~54歲</option>
+                <option>55歲以上</option>
+                <option>不想透露</option>
+            </select>
+
+            <br><label for="phonenumber"><b>手機:</b></label>
+            <input type="tel" placeholder="09xx-xxx-xxx" name="phonenumber">
+
+            <label for="email"><b>&nbsp&nbsp信箱:</b></label>
+            <input type="email" placeholder="請填入您的信箱" name="email">
+
+            <label for="address"><b>地址:</b></label>
+            <input id="address" type="text" placeholder="請填入您的聯絡地址" name="address">
+
+            <button type="button" class="btn" onclick="closeForm()">確定</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">取消</button>
+            <button type="button" class="cancelbtn" onclick="closeForm()">✕</button>
+
+            <div><label class="starrating" for="star"><b>滿意度:</b></label></div>
+
+            <div id="rating">
+                <input id="star" type="hidden" name="rating" value="3">
+                <img src="selectedStar.svg" data-position="1">
+                <img src="selectedStar.svg" data-position="2">
+                <img src="selectedStar.svg" data-position="3">
+                <img src="unselectedStar.svg" data-position="4">
+                <img src="unselectedStar.svg" data-position="5">
+            </div>
+
+            <div class="commentdiv">
+                <label for="comment"><b>評語:</b></label>
+                <textarea placeholder="請寫下您的評語" name="comment" id="comment" cols="68.5" rows="8"></textarea>
+            </div>
+        </form>
+    </div>
+
+    <img style="position:absolute ; bottom:50px; right:30px;" src="./img/sentence.png" alt="">
+    <div
+        style="position:absolute ; bottom:-25px; right: 60px; text-align: center; font-size: 18px; width: 500px; height: 200px;">
+        <p style="color:white;font-size: 20px;" id="word"></p>
+        <p style="color:white;font-size: 20px;" id="word2"></p>
+    </div>
+
+    <!-- <img style="position:absolute; top: 20px; right: -350px; z-index: -1; margin: 0; padding: 0;" src="./img/hotback.png" alt=""> -->
+
+    <footer class="foot">
+        <div class="footimg"><img src="./img/footer.png" alt=""></div>
+        <div class="foottext">
+            <p>Copyright © 2022 CYD Media Group</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        let items = document.querySelectorAll('#featureContainer .carousel .carousel-item');
+        items.forEach((el) => {
+            const minPerSlide = 4
+            let next = el.nextElementSibling
+            for (var i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    // wrap carousel by using first child
+                    next = items[0]
+                }
+                let cloneChild = next.cloneNode(true)
+                el.appendChild(cloneChild.children[0])
+                next = next.nextElementSibling
+            }
+        })
+
+    </script>
+
+    <script>
+
+        var obj = [['Adventure is out there.', '天外奇蹟'], ['I Am Iron Man.', '鋼鐵人'], ['May the Force be with you.', '星際大戰'], ['I’ll be back.', '魔鬼終結者'],['就一句話！噁心！','讓子彈飛'],['Was anything real?','楚門的世界'],['I will find you and I will kill you.','即刻救援'],['搶錢、搶糧、搶娘們!','投名狀'],['You are never wrong to do the right thing.','高年級實習生'],['There is no certainty, only opportunity.','V怪客'],['At the edge of the world, his journey begings.','浩劫重生'],['with great power, comes great responsibility.','蜘蛛人'],['Everything that has a begin has an end.','駭客任務']];
+        function generateMixed() {
+
+            var id = Math.floor(Math.random() * obj.length);
+            document.getElementById("word").innerText = obj[id][0];
+            document.getElementById("word2").innerText = `《${obj[id][1]}》`;
+        }
+
+        generateMixed()
+    </script>
+
+    <script src="./jquery.min.js"></script>
+    <script src="./rating.js"></script>
+    <script src="./Youtube-Video-In-Modal-jQuery-GRT-Youtube-Popup/grt-youtube-popup.js"></script>
+    <script src="./hotmovie.js"></script>
+</body>
+
+</html>

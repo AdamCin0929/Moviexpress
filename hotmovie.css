@@ -1,0 +1,603 @@
+* {
+    box-sizing: border-box
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./img/backgroundimage.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    background-size: cover;
+    z-index: -10000;
+    /* backdrop-filter:blur(1.3px); */
+}
+
+.navbar {
+    background-color: rgb(25, 3, 57);
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    padding-left: 170px;
+    z-index: 1;
+}
+
+.fixed-nav nav {
+    position: fixed;
+}
+
+.secondtitle img {
+    position: relative;
+    transform: scale(8, 8);
+}
+
+.iconlink {
+    margin-right: 10px;
+}
+
+.iconlink a {
+    position: relative;
+    display: block;
+    float: left;
+    transform: scale(1.5, 1.5);
+    padding: 0 13px;
+    top: 15px;
+    transition: all 0.3s ease-out;
+}
+
+.iconlink a:hover{
+    transform: scale(1.7,1.7);
+}
+
+.navbar>a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 23px;
+    position: relative;
+    transition: all 0.3s ease-out;
+}
+
+.navbar>a:hover {
+    color: rgb(216, 185, 112);
+}
+
+.navbar .searchbar {
+    float: right;
+    padding-right: 200px;
+}
+
+.navbar input {
+
+    height: 30px;
+    width: 200px;
+
+}
+
+.navbar .rightbutton {
+    float: right;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-color: white;
+    cursor: pointer;
+
+}
+
+.navbar img {
+    display: block;
+    height: 25px;
+    width: 25px;
+    top: 0;
+    left: 20;
+    margin-top: -4px;
+    margin-left: -7px;
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .navbar>a {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 12px;
+    }
+
+    .navbar input {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 50%;
+        margin: 0;
+        padding: 12px;
+    }
+
+    .navbar .searchbar {
+        float: none;
+    }
+
+    .navbar .rightbutton {
+
+        float: left;
+        margin: 0;
+        padding: 0px;
+    }
+
+    .navbar img {
+        float: left;
+        margin: 0;
+    }
+}
+
+.newstitle {
+    margin-top: 50px;
+    padding-left: 180px;
+    padding-right: 1563px;
+}
+
+.newstitle h1 {
+    color: black;
+    border-bottom: 5px rgb(216, 185, 112) solid;
+    padding-bottom: 5px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container {
+    position: relative;
+    transform: scale(0.9, 0.9);
+    
+}
+
+@media (max-width: 767px) {
+    #featureContainer .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    #featureContainer .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+#featureContainer .carousel-inner .carousel-item.active,
+#featureContainer .carousel-inner .carousel-item-next,
+#featureContainer .carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    #featureContainer .carousel-inner .carousel-item-end.active,
+    #featureContainer .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    #featureContainer .carousel-inner .carousel-item-start.active,
+    #featureContainer .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+
+    #featureContainer .card img {
+        width: 90%;
+        
+    }
+
+    #featureContainer .carousel-item {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 767px) {
+    #featureContainer .card img {
+        width: 100%;
+    }
+}
+
+#featureContainer .carousel-inner .carousel-item-end,
+#featureContainer .carousel-inner .carousel-item-start {
+    transform: translateX(0);
+    
+}
+
+#featureContainer .card {
+    border: 0;
+    background-color: transparent;
+}
+
+#featureContainer .card {
+    position: relative;
+}
+
+.carousel-inner {
+    height: 700px;
+}
+
+#featureContainer .card .card-img-overlays {
+    position: relative;
+    left: 2px;
+    top: 15px;
+    color: rgb(25, 3, 57);
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+.card-img img {
+    border: 8px rgb(25, 3, 57) ridge;
+}
+
+.trailertexttitle {
+    background-color: rgb(25, 3, 57);
+    font-size: 30px;
+    color: white;
+    width: 286.2px;
+    font-weight: bolder;
+    padding-left: 12px;
+    margin-top: -24.5px;
+    text-align: center;
+}
+
+.IMDB {
+    position: absolute;
+    transform: scale(0.2, 0.2);
+    bottom: 65px;
+    left: -90px;
+}
+
+.IMDB:hover {
+    transform: scale(0.22, 0.22);
+}
+
+
+.IMDBp {
+    position: absolute;
+    bottom: 100px;
+    left: 72px;
+    color: rgb(25, 3, 57);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.IMDBp:hover,
+.tomatop:hover {
+    text-decoration: underline rgb(25, 3, 57);
+}
+
+.tomato {
+    position: absolute;
+    transform: scale(0.12, 0.12);
+    bottom: 5px;
+    left: 30px;
+}
+
+.tomato:hover {
+    transform: scale(0.14, 0.14);
+}
+
+.tomatop {
+    position: absolute;
+    bottom: 100px;
+    left: 180px;
+    color: rgb(25, 3, 57);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.trailertext {
+    font-size: 26px;
+    color: rgb(25, 3, 57);
+    font-weight: bolder;
+    position: relative;
+    left: 4px;
+}
+
+.trailertext img {
+    left: -20px;
+    top: -143px;
+    position: relative;
+    transform: scale(0.15, 0.15);
+    cursor: pointer;
+}
+
+.trailertext img:hover {
+    transform: scale(0.17, 0.17);
+}
+
+/* .card-img-overlays{
+    position: relative;
+    top:10px;
+    z-index: 1;
+} */
+
+#featureContainer a {
+    text-decoration: none;
+}
+
+#featureContainer .indicator {
+    background-color: white;
+    color: rgb(25, 3, 57);
+    position: relative;
+    border: 1px solid rgb(25, 3, 57);
+    padding: 3px 6px 3px 6px;
+    bottom: 10px;
+    left: -28px;
+}
+
+#featureContainer .indicator:hover {
+    background-color: rgb(25, 3, 57);
+    border: 1px solid rgb(25, 3, 57);
+    color: white;
+    transition: 200ms;
+}
+
+
+.foot {
+
+    overflow: hidden;
+    position: absolute;
+    height: 80px;
+    bottom: -80px;
+    background-color: rgb(25, 3, 57);
+}
+
+.foot img {
+    position: relative;
+    top: 5px;
+    width: 15%;
+}
+
+.foot .footimg {
+    text-align: center;
+}
+
+.foot p {
+    text-align: center;
+    color: white;
+}
+
+.foot .foottext {
+    font-size: 10px;
+    position: relative;
+    bottom: 20px;
+}
+
+.boxofficetitle {
+    display: flex;
+    position: relative;
+    float: right;
+    right: 430px;
+    top: -790px;
+    border-bottom: 5px rgb(216, 185, 112) solid;
+}
+
+.boxofficetitle h1 {
+    font-weight: bold;
+}
+
+/* Style the tab */
+.boxoffice {
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    float: right;
+    position: relative;
+    right: 70px;
+    top: -680px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.boxoffice button {
+    float: left;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px 51px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Change background color of buttons on hover */
+.boxoffice button:hover {
+    background-color: rgb(216, 185, 112);
+}
+
+/* Create an active/current tablink class */
+.boxoffice button.active {
+    background-color: rgb(25, 3, 57);
+    color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 2px solid rgb(25, 3, 57);
+    position: absolute;
+    width: 359px;
+    right: 190px;
+    top: 274px;
+    background-color: white;
+}
+
+.tabcontent p {
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(25, 3, 57);
+}
+
+.review {
+    position: relative;
+    width: 286px;
+    height: 170px;
+    background-color: rgb(216, 185, 112);
+    border-radius: 0 0 10px 10px;
+}
+
+.open-button {
+    background-color: rgb(25, 3, 57);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 190px;
+    width: 80px;
+    font-size: 24px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 12%;
+    left: 35%;
+    z-index: 9;
+    border-radius: 8px;
+    
+}
+
+/* Add styles to the form container */
+.form-container {
+    width: 600px;
+    height: 690px;
+    padding: 10px;
+    background-color:  rgba(216, 185, 112, 0.99);
+    border: 5px solid rgb(25, 3, 57);
+
+    border-radius: 8px;
+
+}
+
+.form-container p {
+    position: relative;
+    font-size: 36px;
+    font-weight: bold;
+    left: 245px;
+}
+
+label b {
+    font-size: 18px;
+}
+
+.radiob {
+    font-size: 18px;
+}
+
+option {
+    font-size: 18px;
+}
+
+/* Full-width input fields */
+.form-container input[type=text],
+.form-container input[type=tel] {
+    width: 30%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 6px;
+}
+
+.form-container input[id="address"] {
+    border-radius: 6px;
+    width: 92%;
+}
+
+.form-container input[type=email] {
+    border-radius: 6px;
+    width: 51%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus,
+.form-container input[type=email]:focus {
+    border-radius: 6px;
+    background-color: #ddd;
+    outline: none;
+}
+
+textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    position: relative;
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    left: 340px;
+    top: 310px;
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+.form-container .cancelbtn {
+    position: relative;
+    background-color: transparent;
+    color: rgb(25, 3, 57);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    /* width: 20%; */
+    left: 300px;
+    bottom: 290px;
+    opacity: 0.9;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover {
+    font-weight: bold;
+    color: black;
+}
+
+#rating {
+    position: relative;
+    bottom: 68px;
+    left: 60px;
+}
+
+.starrating {
+    position: relative;
+    left: 0px;
+    top: -40px;
+}
+
+.form-container input[id="comment"]{
+    width: 100%;
+    height: 200px;
+}
+
+.commentdiv{
+    position: relative;
+    bottom: 30px;
+}
