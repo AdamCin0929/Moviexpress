@@ -145,7 +145,7 @@ body {
 .newstitle {
     margin-top: 50px;
     padding-left: 180px;
-    padding-right: 1563px;
+    padding-right: 1515px;
 }
 
 .newstitle h1 {
@@ -463,7 +463,7 @@ body {
 .form-popup {
     display: none;
     position: fixed;
-    bottom: 12%;
+    bottom: 10%;
     left: 35%;
     z-index: 9;
     border-radius: 8px;
@@ -472,7 +472,7 @@ body {
 
 /* Add styles to the form container */
 .form-container {
-    width: 600px;
+    width: 610px;
     height: 690px;
     padding: 10px;
     background-color:  rgba(216, 185, 112, 0.99);
